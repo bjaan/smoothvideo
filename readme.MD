@@ -32,14 +32,14 @@ It will output a temporary smoothed video file - first - without audio, ends wit
 
 # Contents
 
-* `smoothvideo.bat` script to smooth a video file, calls FFMPEG with `smoothvideo.avs` and re-encodes the result, and re-adds the original audio
+* `smoothvideo.bat` script to smooth a video file, calls FFMPEG with `smoothvideo.avs` and re-encodes the result, and re-adds the original audio.
  
-* `smoothvideo.avs` AviSynth+ script that read a videofile using the FFMS plug-in and perform the smoothing operation.
+* `smoothvideo.avs` AviSynth+ script that reads a videofile using the FFMS plug-in and performs the smoothing operation.
 
-* `SVPflow_LastGoodVersions.7z` last good SVPflow version
+* `SVPflow_LastGoodVersions.7z` the last good SVPflow version.
 
 * `plugins64.zip` backup of my `C:\Program Files (x86)\AviSynth+\plugins64` folder. 
 
 # Screenshot
 
-![screeenshot](https://raw.githubusercontent.com/bjaan/smoothvideo/master/screenshot.png)
+![screenshot](https://raw.githubusercontent.com/bjaan/smoothvideo/master/screenshot.png)
