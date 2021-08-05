@@ -20,8 +20,7 @@ More information about the SVPflow parameters https://www.svp-team.com/wiki/Manu
 
 	OK, OK, calm down now. I could have used something else than SVP-teams' software, but it is not nice find out when your script is finally working that they pulled this trick.  When I like their software, I might have bought a license, but now - after finding out about this - never!!	On the contrary, Plex doesn't do this type of practices and I have bought their great product.
 			
-	Look an alternative to consider: https://github.com/nihui/rife-ncnn-vulkan
-	[/rant]
+	Oh look! An alternative to consider: https://github.com/nihui/rife-ncnn-vulkan [/rant]
 
 5. Download a copy of this reposity, and adjust the first line in `smoothvideo.bat` to match the FFMPEG folder and feel free to update the command line parameters for `ffmpeg.exe`.
 
