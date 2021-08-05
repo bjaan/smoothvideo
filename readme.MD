@@ -18,7 +18,10 @@ More information about the SVPflow parameters https://www.svp-team.com/wiki/Manu
    
 	[rant] The latest versions of SVPflow add a CONTRAPRODUCTIVE red border to the resulting file, WHICH I DON'T WANT TO REMOVE, as I am losing extra pixels on each side of the video, because THEY decided to add it as an EFFECT. Their release notes say: "Please note that SVPflow libs require a SVP Manager running (Windows and macOS only), otherwise you'll see a red rectangle around the video frame."  So, as long as I NOT install and keep running THEIR bloatware, THEY decide to ANNOY ME for the rest of my days of using MY computer. What will be added next? A spinning logo of their religion on top of my video, because I MUST LOVE THEIR god?  Or an additional high pitched sound that wakes the neighbour's dogs and make them bark everytime I play a video file - especially during nighttime?  Are these guys insane!?  Extortion! mob practices galore!
 
-	OK, OK, calm down now. I could have used something else than SVP-teams' software, but it is not nice find out when your script is finally working that they pulled this trick.  When I like it, I could always have bought a license, but now - after finding out about this - never!! On the contrary, Plex doesn't do this type of practices and I have bought their great product. [/rant]
+	OK, OK, calm down now. I could have used something else than SVP-teams' software, but it is not nice find out when your script is finally working that they pulled this trick.  When I like their software, I might have bought a license, but now - after finding out about this - never!!	On the contrary, Plex doesn't do this type of practices and I have bought their great product.
+			
+	Look an alternative to consider: https://github.com/nihui/rife-ncnn-vulkan
+	[/rant]
 
 5. Download a copy of this reposity, and adjust the first line in `smoothvideo.bat` to match the FFMPEG folder and feel free to update the command line parameters for `ffmpeg.exe`.
 
@@ -26,7 +29,7 @@ More information about the SVPflow parameters https://www.svp-team.com/wiki/Manu
 
 Run `smoothvideo.bat videofile.mp4`
 
-It will output a temporary smoothed video file - first - without audio, ends with `_output_no_audio.mkv`, and afterwards a third file, ends with `_output.mkv`, which is smoothed and has the original audio.  Note: this only works with video files that have single audio tracks.
+It will output a temporary smoothed video file - first - without audio, ends with `_output_no_audio.mkv`, and afterwards a second file, ends with `_output.mkv`, which is smoothed and has the original audio.  Note: this only works with video files that have single audio tracks.
 
 # Contents
 
