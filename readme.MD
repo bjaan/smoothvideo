@@ -29,15 +29,15 @@ More information about the SVPflow parameters https://www.svp-team.com/wiki/Manu
 1. Smooth a video file: run `smoothvideo.bat videofile_with_audio.mp4`
 * `videofile_with_audio.mp4`: take the audio from this file and the video of it in the resulting video file
 
-2. Smooth a folder of images: run `smoothvideo_images.bat file_pattern start_frame stop_frame output_videofile.mkv videofile_with_audio_or_audiofile.mkv`
+2. Smooth a folder of images: run `smoothvideo_images.bat file_pattern start_frame stop_frame smooth_videofile.mkv videofile_with_audio_or_audiofile.mkv`
 * `file_pattern`: e.g. `c:\folder\image_%d.png`. It uses the ImageSource function of AviSynth+ to read the images: see http://avisynth.nl/index.php/ImageSource for details
 * `start_frame`: first frame number e.g. 1: gets replaced with `%d` in the file pattern
 * `stop_frame`: last frame number: gets replaced with `%d` in the file pattern
 *  `frames_per_second_original`: number of frames per second before smoothing
-*  `output_videofile.mkv` : resulting video file
+*  `smooth_videofile.mkv` : resulting video file
 * `videofile_with_audio_or_audiofile.mp4`: optional: take the audio from this file and place it in the resulting video file
 
-It will output a temporary smoothed video file - first - without audio, ends with `_output_no_audio.mkv`, and afterwards a second file, ends with `_output.mkv`, which is smoothed and has the original audio.  Note: this only works with video files that have single audio tracks.
+It will output a temporary smoothed video file - first - without audio, ends with `_smooth_no_audio.mkv`, and afterwards a second file, ends with `_smooth.mkv`, which is smoothed and has the original audio.  Note: this only works with video files that have single audio tracks.
 
 # Contents
 
