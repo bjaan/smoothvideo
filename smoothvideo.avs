@@ -3,6 +3,9 @@ Import("parameters.avs")
 SetWorkingDir(v_workingdir)
 input = FFmpegSource2(source=v_source)
 
+#Convert to YV12 color space when needed - needed by SVPflow
+input = input.PixelType == "YV12" ? input : input.PixelType == "RGB24" ? ConvertToYV12(input) : ConvertToYV12(ConvertToRGB24(input))
+
 #current settings: Maximum smoothness for animation
 #more information about the parameters https://www.svp-team.com/wiki/Manual:SVPflow
 

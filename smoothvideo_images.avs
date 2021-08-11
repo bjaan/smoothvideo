@@ -9,7 +9,7 @@ offset = "set offset="+String(v_start / v_fps)
 WriteFileStart(input, "setoffset.bat", "offset")
 
 #Convert to YV12 color space - needed by SVPflow
-input = ConvertToYV12(input)
+input = input.PixelType == "YV12" ? input : input.PixelType == "RGB24" ? ConvertToYV12(input) : ConvertToYV12(ConvertToRGB24(input))
 
 #current settings: Maximum smoothness for animation
 #more information about the parameters https://www.svp-team.com/wiki/Manual:SVPflow
