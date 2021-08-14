@@ -17,7 +17,7 @@ echo v_fps=%4 >> parameters.avs
 echo on
 
 rem smooth video, also writes setoffset.bat for audio offset
-"%FFMPEG_ROOT%\bin\ffmpeg.exe" -i smoothvideo_images.avs -pix_fmt yuv420p -vcodec libx265 -crf 15 -preset fast "%~d5%~p5%~n5_no_audio.mkv"
+"%FFMPEG_ROOT%\bin\ffmpeg.exe" -i %~dp0\smoothvideo_images.avs -pix_fmt yuv420p -vcodec libx265 -crf 15 -preset fast "%~d5%~p5%~n5_no_audio.mkv"
 
 if "%~6" == "" goto end
 
