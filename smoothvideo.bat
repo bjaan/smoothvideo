@@ -5,8 +5,8 @@ rem path tilde tricks see https://ss64.com/nt/syntax-args.html
 
 if "%~1" == "" goto usage
 
-echo v_workingdir="%~dp0" > parameters.avs
-echo v_source="%~f1" >> parameters.avs
+echo v_workingdir="%~dp0" > %~dp0\parameters.avs
+echo v_source="%~f1" >> %~dp0\parameters.avs
 echo on
 
 rem smooth video

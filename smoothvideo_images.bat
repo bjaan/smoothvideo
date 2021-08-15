@@ -9,11 +9,11 @@ if "%~3" == "" goto usage
 if "%~4" == "" goto usage
 if "%~5" == "" goto usage
 
-echo v_workingdir="%~dp0" > parameters.avs
-echo v_source="%1" >> parameters.avs
-echo v_start=%2 >> parameters.avs
-echo v_stop=%3 >> parameters.avs
-echo v_fps=%4 >> parameters.avs
+echo v_workingdir="%~dp0" > %~dp0\parameters.avs
+echo v_source="%1" >> %~dp0\parameters.avs
+echo v_start=%2 >> %~dp0\parameters.avs
+echo v_stop=%3 >> %~dp0\parameters.avs
+echo v_fps=%4 >> %~dp0\parameters.avs
 echo on
 
 rem smooth video, also writes setoffset.bat for audio offset
