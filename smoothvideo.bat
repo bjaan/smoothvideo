@@ -20,6 +20,6 @@ goto end
 :usage
 echo Smooth a video file
 echo smoothvideo.bat videofile_with_audio.mp4
-echo   videofile_with_audio.mp4: take the audio from this file and the video of it in the resulting video file
+echo   videofile_with_audio.mp4: take the audio from this file and smooth the video of it in the resulting video file
 
 :end
