@@ -10,7 +10,7 @@ if "%~4" == "" goto usage
 if "%~5" == "" goto usage
 
 echo v_workingdir="%~dp0" > %~dp0\parameters.avs
-echo v_source="%1" >> %~dp0\parameters.avs
+echo v_source="%~1" >> %~dp0\parameters.avs
 echo v_start=%2 >> %~dp0\parameters.avs
 echo v_stop=%3 >> %~dp0\parameters.avs
 echo v_fps=%4 >> %~dp0\parameters.avs
