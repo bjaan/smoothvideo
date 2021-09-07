@@ -29,7 +29,7 @@ An alternative to consider for this script is https://github.com/nihui/rife-ncnn
 1. Smooth a video file: run `smoothvideo.bat videofile_with_audio.mp4`
 * `videofile_with_audio.mp4`: take the audio from this file and smooth the video of it in the resulting video file
 
-2. Smooth a folder of images: run `smoothvideo_images.bat file_pattern start_frame stop_frame smooth_videofile.mkv videofile_with_audio_or_audiofile.mkv`
+2. Smooth a folder of images: run `smoothvideo_images.bat file_pattern start_frame stop_frame frames_per_second_original smooth_videofile.mkv videofile_with_audio_or_audiofile.mkv`
 * `file_pattern`: e.g. `c:\folder\image_%d.png`. It uses the ImageSource function of AviSynth+ to read the images: see http://avisynth.nl/index.php/ImageSource for details
 * `start_frame`: first frame number e.g. 1: gets replaced with `%d` in the file pattern
 * `stop_frame`: last frame number: gets replaced with `%d` in the file pattern
