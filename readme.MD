@@ -5,7 +5,7 @@ Script to *smooth* a video file, of lesser than 60 frames per second, to 60 fram
 
 This script should work on AMD & nVidia GPUs. When you change `GPU:1` to `GPU:0`, even without GPU hardware acceleration.
 
-Works on only Windows!
+Works only on Windows!
 
 More information about the SVPflow parameters https://www.svp-team.com/wiki/Manual:SVPflow
 
@@ -39,7 +39,7 @@ An alternative to consider for this script is https://github.com/nihui/rife-ncnn
 
 It will output a temporary smoothed video file - first - without audio, ends with `_smooth_no_audio.mkv`, and afterwards a second file, ends with `_smooth.mkv`, which is smoothed and has the original audio.  Note: this only works with video files that have single audio tracks.
 
-This FFMPEG command will add two audio tracks using `-map 1:a:0 -map 1:a:1` and a subtitle track `-map 1:s:0` from the `video.mkv` file to the `_smooth_no_audio.mkv` file, when you need more audiotracks and subtitle copied in the resulting video: `ffmpeg.exe -i "video_smooth_no_audio.mkv" -i "video.mkv" -c:v copy -map 0:v:0 -map 1:a:0 -map 1:a:1 -map 1:s:0 -c:a copy "video_smooth_dualaudio.mkv"`
+This FFMPEG command will add two audio tracks using `-map 1:a:0 -map 1:a:1` and a subtitle track `-map 1:s:0` from the `video.mkv` file to the `_smooth_no_audio.mkv` file, when you need more audio tracks and subtitle tracks copied in the resulting video: `ffmpeg.exe -i "video_smooth_no_audio.mkv" -i "video.mkv" -c:v copy -map 0:v:0 -map 1:a:0 -map 1:a:1 -map 1:s:0 -c:a copy "video_smooth_dualaudio.mkv"`
 
 # Contents
 
