@@ -31,8 +31,8 @@ goto end
 
 :usage
 echo Smooth a folder of images
-echo smoothvideo_images.bat file_pattern start_frame stop_frame frames_per_second_original smooth_videofile.mkv videofile_with_audio_or_audiofile.mkv
-echo  file_pattern: e.g. c:\folder\image_%d.png. It uses the ImageSource function of AviSynth+ to read the images: see http://avisynth.nl/index.php/ImageSource for details
+echo smoothvideo_images.bat file_pattern start_frame stop_frame frames_per_second_original smooth_videofile.mkv [videofile_with_audio_or_audiofile.mkv]
+echo  file_pattern: e.g. c:\folder\image_%%d.png. It uses the ImageSource function of AviSynth+ to read the images: see http://avisynth.nl/index.php/ImageSource for details
 echo  start_frame: first frame number e.g. 1: gets replaced with %d in the file pattern
 echo  stop_frame: last frame number: gets replaced with %d in the file pattern
 echo  frames_per_second_original: number of frames per second before smoothing: e.g. 30
