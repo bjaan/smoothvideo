@@ -6,6 +6,12 @@ input = FFmpegSource2(source=v_source)
 #Convert to YV12 color space when needed - needed by SVPflow
 input = input.PixelType == "YV12" ? input : input.PixelType == "RGB24" ? ConvertToYV12(input) : ConvertToYV12(ConvertToRGB24(input))
 
+#Upscale to HD 1080p if lower resolution is provided
+h = 1080
+w = round(float(input.Width) / float(input.Height) * float(h))
+w = w % 2 > 0 ? w + 1 : w
+input = input.Height < h ? spline64resize(input, w, h) : input
+
 #current settings: Maximum smoothness for animation
 #more information about the parameters https://www.svp-team.com/wiki/Manual:SVPflow
 

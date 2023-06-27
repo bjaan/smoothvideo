@@ -15,6 +15,8 @@ rem smooth video
 rem merge audio with smoothed video file
 "%FFMPEG_ROOT%\bin\ffmpeg.exe" -i "%~d1%~p1%~n1_smooth_no_audio.mkv" -i "%~f1" -c:v copy -map 0:v:0 -map 1:a:0 -c:a copy -shortest "%~p1%~n1_smooth.mkv"
 
+del "%~f1.ffindex"
+
 goto end
 
 :usage
