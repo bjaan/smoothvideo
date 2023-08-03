@@ -14,7 +14,7 @@ input = input.PixelType == "YV12" ? input : input.PixelType == "RGB24" ? Convert
 #current settings: Maximum smoothness for animation
 #more information about the parameters https://www.svp-team.com/wiki/Manual:SVPflow
 
-super_params = "{scale:{up:0},gpu:1,rc:true}"
+super_params = "{pel:2,scale:{up:2},gpu:1,rc:true}"
 
 analyse_params = "{main:{search:{coarse:{distance:-8,bad:{sad:2000,range:24}},type:2}},refine:[{thsad:250}]}"
 

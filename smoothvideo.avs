@@ -10,7 +10,7 @@ input = input.PixelType == "YV12" ? input : input.PixelType == "RGB24" ? Convert
 h = 1080
 w = round(float(input.Width) / float(input.Height) * float(h))
 w = w % 2 > 0 ? w + 1 : w
-input = input.Height < h ? spline64resize(input, w, h) : input
+input = input.Height < h ?  spline64resize(input, w, h) : input
 
 #current settings: Maximum smoothness for animation
 #more information about the parameters https://www.svp-team.com/wiki/Manual:SVPflow
