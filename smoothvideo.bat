@@ -13,7 +13,7 @@ rem smooth video
 "%FFMPEG_ROOT%\bin\ffmpeg.exe" -i %~dp0\smoothvideo.avs -pix_fmt yuv420p -vcodec libx265 -crf 15 -preset fast "%~d1%~p1%~n1_smooth_no_audio.mkv"
 
 rem merge audio with smoothed video file
-"%FFMPEG_ROOT%\bin\ffmpeg.exe" -i "%~d1%~p1%~n1_smooth_no_audio.mkv" -i "%~f1" -c:v copy -map 0:v:0 -map 1:a:0 -c:a copy -shortest "%~p1%~n1_smooth.mkv"
+"%FFMPEG_ROOT%\bin\ffmpeg.exe" -i "%~d1%~p1%~n1_smooth_no_audio.mkv" -i "%~f1" -c:v copy -map 0:v:0 -map 1:a:0 -c:a copy -shortest "%~d1%~p1%~n1_smooth.mkv"
 
 del "%~f1.ffindex"
 
